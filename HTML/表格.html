@@ -1,0 +1,61 @@
+<table>：定义表格的起始标签。
+<tr>：定义表格的行（table row）。
+<td>：定义表格的数据单元格（table data cell），通常位于行内。
+<th>：定义表格的表头单元格（table header cell），用于列标题。
+<caption>：定义表格的标题。
+<thead>：定义表格的表头部分。
+<tbody>：定义表格的主体部分。
+<tfoot>：定义表格的页脚部分。
+
+border: 设置表格的边框大小，取值为0或正整数。例如：<table border="1">。
+width 和 height: 设置表格的宽度和高度。可以使用像素值、百分比或其他长度单位。例如：<table width="100%">。
+cellspacing 和 cellpadding: 分别用于设置单元格之间的间距和单元格内容与单元格边框的距离。例如：<table cellspacing="5" cellpadding="10">。
+align 和 valign: 用于设置表格的水平对齐方式和垂直对齐方式。例如：<table align="center" valign="top">。
+colspan 和 rowspan: 用于合并单元格，分别指定单元格横向和纵向的合并数量。例如：<td colspan="2">。
+headers: 指定表头单元格与数据单元格的关联，提升可访问性。例如：<th headers="col1"> 和 <td id="col1">。
+scope: 用于标识表头单元格的范围，可以是 "row"（行表头）或 "col"（列表头）。例如：<th scope="row">。
+caption: 添加表格标题，位于表格上方。例如：<caption>My Table</caption>。
+summary: 提供表格的简短描述，有助于屏幕阅读器用户了解表格内容。例如：<table summary="This table displays sales data.">。
+border-collapse 和 border-spacing: 分别控制表格边框的合并方式和单元格之间的间距。例如：<style>table { border-collapse: collapse; border-spacing: 0; }</style>。
+bgcolor: 设置单元格的背景颜色，但不推荐使用，因为样式应该通过CSS来管理。
+class 和 id: 用于为表格元素指定CSS类别或唯一标识符，以便进行样式和脚本操作。例如：<table class="my-table" id="table1">。
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table Example</title>
+</head>
+<body>
+    <h1>Student Information</h1>
+    <table border="1">
+        <caption>Student Details</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>20</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>22</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total Students: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

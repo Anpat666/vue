@@ -1,0 +1,39 @@
+/* 直接值显示 */
+div {
+    color: red;
+}
+
+/* rgb */
+/* 3个参数0-255 也可以百分比 */
+div {
+    color: rgb(red, green, blue);
+}
+
+/* rgba */
+/* 与rgb相同 但是多了一个alpha透明度 */
+/* alpha的值为0-1 */
+div {
+    color: rgba(red, green, blue, alpha);
+}
+
+/* HEX或HEXA */
+/* HEX十六进制表示法  HEXA十六进制表示法带透明度 */
+div {
+    color: #FF0088;
+}
+
+/* HSL或HSLA */
+/* 通过角度表示  三个参数色相，饱和度，亮度 A=透明度 */
+/*
+    hue = 0deg - 300deg
+    saturation = 0% - 100%
+    lightness = 0% - 100%
+    lightness = 0 - 1
+ */
+div {
+    color: hsl(45deg, 50%, 50%);
+}
+
+div {
+    color: hsla(hue, saturation, lightness, alpha);
+}

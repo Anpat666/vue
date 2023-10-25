@@ -1,0 +1,58 @@
+/* 选中的是勾选的复选框或单选按钮 */
+input:checked {
+    width: 100px;
+    height: 100px;
+}
+
+/* 选中被禁用的input元素 */
+input:disabled {
+    background-color: black;
+}
+
+/* 选中可用的input元素 */
+input:enabled {
+    background-color: aquamarine;
+}
+
+/* 目标伪类 */
+/* 选中描点指向的元素 */
+div:target {
+    background-color: yellow;
+}
+
+/* 语言伪类 */
+/* :lang()根据制定的语言选择元素（本质是看lang属性的值） */
+div:lang(en) {
+    color: chartreuse;
+}
+
+/* 伪元素选择器 */
+/* 选中div中的第一个文字 */
+div::first-letter{
+    color: gold;
+}
+
+/* 选中div的第一行文字 */
+div::first-line{
+    background-color: red;
+}
+
+/* 选中的div中被鼠标选中的文字 */
+div::selection{
+    background-color: cornflowerblue;
+}
+
+/* 选中的是input元素中的提示文字 */
+input::placeholder{
+    color: aqua;
+}
+
+/* 选中的是p元素最开始的位置，随后创建一个子元素 */
+p::before{
+    content: "￥";
+}
+
+/* 选中的是p元素最后的位置，随后创建一个子元素 */
+p::after{
+    content: ".00";
+}

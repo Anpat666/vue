@@ -1,0 +1,51 @@
+标签名：a   语义：超链接
+常用属性： href：要跳转的具体位置； target：跳转时如何打开页面，_self:在本页打开  _blank：在新页打开
+跳转其他网页
+<a href="https://www.baidu.com/" target="_blank">去百度</a>   
+
+跳转本地网页
+<a href="./photo_2023-08-25_11-05-19.jpg" target="_blank">我是一张图片</a>
+
+代码中的多个空格或者多个回车，都会被浏览器解析为一个空格
+虽然a是行内元素，但a元素可以包裹除它自身外的任何元素
+
+浏览器能打开的文件会直接打开
+浏览器不能打开的文件会触发自动下载
+若想强制触发下载，加上donwload属性，属性值为下载文件的名称。
+
+
+锚点
+什么是锚点？ -- 在网页中的一个标记
+具体使用方式：
+第一步：设置锚点
+第一种方式：a标签配合name属性
+<a name="test1"></a>
+
+第二种方式：其他标签配合id属性
+<h2 id="test2 ">我是一个位置</h2>
+
+1.具有href属性的a标签是超链接，具有name属性的a标签是锚点
+name和id都是区分大小写的，且id开头最好不要数字
+
+第二步：跳转锚点
+跳转到test1锚点
+<a href="#test1">去test1锚点</a>
+
+跳到本页面顶部
+<a href="#">回到顶部</a>
+
+跳转到其他页面锚点
+<a href="xxx.html#test1">去xxx.html页面的test1锚点</a>
+
+刷新本页面
+<a href="">刷新本页面</a>
+
+执行一段js
+<a href="javascript:alert(1);">点我弹窗</a>
+
+唤起指定应用
+通过a标签，可以唤起设备应用程序
+<a href="tel:10010">唤起设备拨号</a>
+<a href="mailto:Anpat666@gmail.com">唤起设备发送邮件</a>
+<a href="sms：10086">唤起设备发送短信</a>
+<a href="tg://resolve?domain=Anpat666">唤起telegram联系Anpat666</a>

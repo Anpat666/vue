@@ -1,0 +1,15 @@
+/* 排除满足括号中的条件元素 */
+/* 选中的是div的儿子p元素,但是排除类名为fail的元素 */
+div>p:not(.fail) {
+    color: red;
+}
+
+/* 选中的是div的儿子p元素,但是排除title+值为a开头的元素 */
+div>p:not([title^="a"]) {
+    color: red;
+}
+
+/* 选中的是div的儿子p元素,但是排除第一个儿子p元素 */
+div>p:not(:first-child) {
+    color: aliceblue;
+}

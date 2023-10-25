@@ -1,0 +1,75 @@
+/*
+:nth-last-child(n) 所有兄弟元素中的倒数第N个
+:nth-last-of-type(n) 所有同类型兄弟元素中的倒数第N个
+:only-child 选择没有兄弟的元素
+:only-of-type 选择没有同类型兄弟的元素
+:root 根元素
+:empty 内容为空元素（空格也算内容）
+ */
+
+
+
+/* 选中div的第一个儿子p元素,会被其他元素顶掉 */
+ div>p:first-child {
+    color: rebeccapurple;
+}
+
+
+/* 选中的是div后代p元素，且p的父级是谁无所谓，但p必须是其父级的第一个子元素 */
+div p:first-child {
+    color: cornflowerblue;
+}
+
+/* 选中的是p元素，且p的父级是谁无所谓，但p必须是其父级的第一个子元素 */
+p:first-child{
+   color: cadetblue;
+}
+
+/* 选中div的最后一个儿子p元素 */
+div>p:last-child{
+    color: red;
+}
+
+/* 选中div的第N个儿子p元素 */
+/* 必须是an+b的形式 2n=偶数  2n+1=奇数  -n+5前5个元素 */
+div>p:nth-child(n){
+    color: brown;
+}
+
+ /* 选中div的第一个儿子p元素 */
+ div>p:first-of-type {
+    color: rebeccapurple;
+}
+
+/* 选中div的最后一个儿子p元素 */
+div>p:last-of-type{
+    color: red;
+}
+
+/* 选中div的第N个儿子p元素,限定同类型计算 */
+div>p:nth-of-type(){
+    color: brown;
+}
+
+/* 选中没有兄弟的span元素 */
+span:only-child{
+    color: chartreuse;
+}
+
+
+/* 选中没有同类型兄弟的span元素 */
+span:only-of-type{
+    color: chartreuse;
+}
+
+/* 选中的是根元素 */
+:root{
+    background-color: snow;
+}
+
+/* 选中没有任何内容的div元素 */
+div:empty{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+}

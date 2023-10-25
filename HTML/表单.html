@@ -1,0 +1,56 @@
+form: 表单的容器，用于包裹表单元素并定义表单的属性。
+常用属性包括：
+action: 指定数据提交的目标URL。
+method: 指定提交数据的HTTP方法，通常是 "GET" 或 "POST"。
+target: 指定数据提交后的响应展示位置，如 "_blank"、"_self" 等。
+enctype: 指定数据编码类型，常用的是 "application/x-www-form-urlencoded" 或 "multipart/form-data"。
+autocomplete: 控制表单字段的自动填充功能，可以是 "on" 或 "off"。
+
+<form action="/submit" method="post" enctype="multipart/form-data">
+  <!-- 表单元素将在这里放置 -->
+</form>
+---------------------------------------------------------------------------
+
+input: 用于接收用户输入的单行文本。
+常用属性包括：
+type: 指定输入类型，如 "text"、"password"、"email" 等。
+name: 字段的名称，用于标识数据。
+value: 默认值。
+placeholder: 提示用户输入的占位符文本。
+
+<input type="text" name="username" placeholder="Username">
+---------------------------------------------------------------------------
+
+button: 创建按钮，常用于提交表单或执行脚本操作。常用属性包括：
+type: 指定按钮类型，如 "submit"、"reset" 或 "button".
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+<button type="button">Click me</button>
+---------------------------------------------------------------------------
+
+textarea: 用于接收多行文本输入。常用属性包括：
+name: 字段的名称，用于标识数据。
+rows 和 cols: 控制文本框的行数和列数。
+
+<textarea name="message" rows="4" cols="50"></textarea>
+---------------------------------------------------------------------------
+
+select: 创建下拉菜单选择器。常用属性包括：
+name: 字段的名称，用于标识数据。
+multiple: 允许多选。
+
+<select name="country">
+  <option value="usa">United States</option>
+  <option value="canada">Canada</option>
+</select>
+---------------------------------------------------------------------------
+
+radio 和 checkbox: 创建单选按钮和复选框。常用属性包括：
+name: 字段的名称，用于标识数据。
+value: 选项的值。
+checked: 默认选中状态。
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="checkbox" name="subscribe" value="yes" checked> Subscribe
+---------------------------------------------------------------------------
