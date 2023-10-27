@@ -1,0 +1,45 @@
+/* 字体风格 */
+/* font-style */
+/* 
+  常用值
+  normal:正常(默认)
+  italic:斜体(使用字体自带的斜体效果)
+  oblique:斜体(强制倾斜产生的斜体效果)
+  实现斜体时，更推荐使用italic
+*/
+div{
+    font-style: italic;
+}
+
+/* 字体粗细 */
+/*  font-weight */
+/* 
+  lighter:细
+  normal:正常
+  bold:粗
+  bolder:很粗(多数字体不支持)
+*/
+
+/* 数值 */
+/*
+   100-1000且无单位，数值越大，字体越粗 
+ */
+
+ div{
+    font-weight: bold;
+ }
+ div{
+    font-weight: 500;
+ }
+
+ /* 字体复合写法 */
+ /* font */
+ /*
+    字体大小、字体族必须都写上
+    字体族必须是最后一位，字体大小必须是倒数第二位
+    各个属性用空格隔开
+    实际开发中更推荐复合写法 
+*/
+div{
+    font: bold italic 100px "STCaiyun" ;
+}

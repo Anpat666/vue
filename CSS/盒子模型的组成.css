@@ -1,0 +1,45 @@
+/*
+ CSS会把所有的HTML元素都看成一个盒子，所有的样式也都是基于这个盒子
+     margin(外边距)：盒子与外界的距离 
+     border(边框)：盒子的边框
+     padding(内边距)：紧贴内容的补白区域
+     content(内容)：元素中的文本或后代元素都是它的内容
+
+  盒子的大小=content + 左右padding + 左右border
+  外边距margin不会影响盒子的大小，但会影响盒子的位置
+
+*/
+
+/* 盒子内容区_content */
+/* 
+     width:设置内容区域宽度
+     max-width：设置内容区的最大宽度
+     min-width：设置内容区的最小宽度
+     height：设置内容区的高度
+     max-height：设置内容区的最大高度
+     min-height：设置内容区的最小高度
+
+注意事项：
+    max-width、min-width一般不与width一起使用
+    max-height、min-height一般不与height一起使用
+*/
+
+/* 默认宽度 */
+/* 
+    默认宽度就是不设置width属性时，元素所呈现出来的宽度。
+    总宽度=父的content-自身的左右margin
+    内容区的宽度=父的content-自身的左右margin-自身的左右border-自身的左右padding
+*/
+
+/* 盒子内边距(padding) */
+/* 
+    padding-top:上内边距
+    padding-right：右内边距
+    padding-bottom：下内边距
+    padding-left：左内边距
+    padding：复合属性  可以设置1-4个值
+
+    padding的值不能为负数
+    行内元素的左右内边距是没问题的，上下内边距不能完美的设置
+    块级元素、行内元素，四个方向内边距都可以完美设置
+*/

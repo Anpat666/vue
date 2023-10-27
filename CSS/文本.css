@@ -1,0 +1,75 @@
+/* 文本间距 */
+/*
+   letter-spacing 字母间距
+   word-spacing   单词间距 (通过空格识别词)
+   属性值为像素(px),正值让间距增大，负值让间距缩小 
+*/
+div{
+    word-spacing: 50px;
+    letter-spacing: 2px;
+    
+}
+
+/* 文本修饰 */
+/* 
+可选值：
+       non:无装饰(常用)
+       underline:下划线(常用)
+       overline：上划线
+       line-through：删除线
+可搭配如下值使用：
+        dotted：虚线
+        wavy：波浪线
+        也可以指定颜色
+*/
+div {
+    text-decoration: none;
+}
+
+/* 文本缩进 */
+/* text-indent */
+/*
+   属性值 CSS中的长度单位，例如px 
+*/
+div{
+    text-indent: 50px;
+}
+
+/* 文本对齐_水平 */
+/* text-align */
+/*
+常用值：
+      left：左对齐(默认值)
+      right：右对齐
+      center：居中对齐 
+*/
+div{
+    text-align: center;
+}
+
+/* 行高 */
+/* line-height */
+/*
+可选值：
+     normal：由浏览器根据文字大小决定的一个默认值
+     像素(px)
+     数字：参考自身font-size的倍数(常用)
+     百分比：参考自身的font-size的百分比
+     备注：由于字体设计原因，文字在一行中，并不是绝对垂直居中，若一行中都是文字，不会太影响观感。 
+*/
+/*
+行高注意事项：
+     line-height过小会怎么样？--文字产生重叠，且最小值是0，不能为负数。
+     line-height是可以继承的，且为了能更好的呈现文学，最好写数值
+     line-height和height的关系
+               设置了height，那么高度就是height的值
+               不设置height，会根据line-height计算高度
+应用场景：
+    对于多行文字：控制行与行之间的距离
+    对于单行文字：让height等于line-height，可以实现文字垂直居中 
+*/
+div{
+    line-height: 60px;
+    line-height: 1.5;
+    line-height: 150%;
+}
