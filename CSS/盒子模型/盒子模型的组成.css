@@ -43,3 +43,52 @@
     行内元素的左右内边距是没问题的，上下内边距不能完美的设置
     块级元素、行内元素，四个方向内边距都可以完美设置
 */
+
+/* 盒子边框(border) */
+/* border-style */
+/* 
+   none:默认值
+   solid：实线
+   dashed：虚线
+   dotted：点线
+   double：双实线
+*/
+
+/* border-width */
+/* border-color */
+
+div{
+     border-style: solid;
+     border-width: 15px;
+     border-color: red;
+}
+div{
+     border: 10px solid green;
+     border-left-style: solid;
+     border-left-width: 10px;
+     border-left-color: yellow;
+}
+
+
+/* 盒子外边距(margin) */
+/* 
+   子元素的margin是参考父元素的content计算的
+   上margin、左margin：影响自己的位置
+   下margin、右margin：影响后面兄弟元素的位置
+   块级元素、行内元素，均可以完美设置四个方向的margin；
+   但行内元素，左右可以完美设置，下上margin设置无效
+   margin的值夜可以是auto，如果给一个块级元素设置左右margin都为auto，该块级元素会在父元素水平居中
+   margin的值可以是负值
+*/
+
+/* margin塌陷问题 */
+/*
+   什么是margin塌陷？
+   第一个子元素的上margin会作用在父元素上，最后一个子元素的下margin会作用在父元素上 
+*/
+/* 
+   解决方案
+       给父元素设置不为0的padding
+       给父元素设置宽度不为0的border
+       给父元素设置css样式overflow：hidden
+*/

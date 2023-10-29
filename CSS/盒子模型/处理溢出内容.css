@@ -1,0 +1,15 @@
+/* 处理内容溢出 */
+/* overflow */
+/* 
+属性值：
+     visible：默认值，显示
+     hidden：隐藏
+     scroll：显示滚动条，不论内容是否溢出
+     auto：自动显示滚动条，内容不溢出不显示
+overflow-x 水平方向溢出内容的处理方式
+overflow-y 垂直方向溢出内容给的处理方式
+*/
+/* 
+   overflow-x、overflow-y不能是一个是hidden，一个是visible，是实验属性，不建议使用
+   overflow 常用的值是hidden和auto，除了能处理溢出的显示方式，还可以解决很多疑难杂症
+*/
