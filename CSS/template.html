@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .outer {
-            width: 600px;
-            height: 600px;
-            background-color: red;
+        .outer{
+            width: 500px;
+            background-color: skyblue;
+            border: 1px solid black;
+            padding: 20px;
+            position: relative;
 
         }
-
-        img {
+        .box{
             width: 200px;
             height: 200px;
-            float: left;
-            
+            font-size: 50px;
         }
-
-        .S1 {
-            background-color: violet;
+        .box1{
+            background-color: red;
         }
-
-        .S2 {
-            background-color: aqua;
+        .box2{
+            background-color: yellow;
+            position: absolute;
+            top:220px;
+            left: 20px;
         }
-
-        .S3 {
-            background-color: coral;
+        .box3{
+            background-color: green;
         }
+        .outer:hover .box2{
+            left:300px
+        }
+        
     </style>
 </head>
-
 <body>
     <div class="outer">
-        <img src="./屏幕截图 2023-10-13 090724.png" alt="">
+         <div class="box box1">1</div>
+         <div class="box box2">2</div>
+         <div class="box box3">3</div>
     </div>
-
 </body>
-
 </html>
