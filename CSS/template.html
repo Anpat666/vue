@@ -1,46 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .outer{
-            width: 500px;
-            background-color: skyblue;
-            border: 1px solid black;
-            padding: 20px;
-            position: relative;
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
+        body {
+            height: 2000px;
         }
-        .box{
-            width: 200px;
-            height: 200px;
-            font-size: 50px;
+
+        .header {
+            height: 80px;
+            background-color: coral;
+            text-align: center;
+            line-height: 80px;
         }
-        .box1{
-            background-color: red;
+
+        .numberA {
+            height: 30px;
+            background-color: gray;
+            line-height: 30px;
+            font-size: 20px;
         }
-        .box2{
-            background-color: yellow;
-            position: absolute;
-            top:220px;
-            left: 20px;
+
+        .A,
+        .B,
+        .C {
+            height: 40px;
+            background-color: skyblue;
+            line-height: 40px;
+            font-size: 30px;
+            position: sticky;
+            top: 0px;
         }
-        .box3{
-            background-color: green;
-        }
-        .outer:hover .box2{
-            left:300px
-        }
-        
     </style>
 </head>
+
 <body>
-    <div class="outer">
-         <div class="box box1">1</div>
-         <div class="box box2">2</div>
-         <div class="box box3">3</div>
+    <div class="container">
+        <div class="header">头部区域</div>
+        <div class="contentA">
+            <div class="A">A</div>
+            <div class="numberA">A1</div>
+            <div class="numberA">A2</div>
+            <div class="numberA">A3</div>
+            <div class="numberA">A4</div>
+            <div class="numberA">A5</div>
+            <div class="numberA">A6</div>
+            <div class="numberA">A7</div>
+            <div class="numberA">A8</div>
+        </div>
+        <div class="contentB">
+            <div class="B">B</div>
+            <div class="numberA">B1</div>
+            <div class="numberA">B2</div>
+            <div class="numberA">B3</div>
+            <div class="numberA">B4</div>
+            <div class="numberA">B5</div>
+            <div class="numberA">B6</div>
+            <div class="numberA">B7</div>
+            <div class="numberA">B8</div>
+        </div>
+        <div class="contentC">
+            <div class="C">C</div>
+            <div class="numberA">C1</div>
+            <div class="numberA">C2</div>
+            <div class="numberA">C3</div>
+            <div class="numberA">C4</div>
+            <div class="numberA">C5</div>
+            <div class="numberA">C6</div>
+            <div class="numberA">C7</div>
+            <div class="numberA">C8</div>
+        </div>
     </div>
 </body>
+
 </html>
